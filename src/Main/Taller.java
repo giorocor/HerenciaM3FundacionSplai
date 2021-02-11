@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-/**
- * 
- */
 package Main;
 
 /**
@@ -11,11 +7,10 @@ package Main;
 public class Taller {
 
 	/**
-	 * @param args
+	 * 
 	 */
-	public static void main(String[] args) {
-		
-
+	static void taller() {
+		System.out.println("El taller");
 	}
 	
 	public boolean comprovarMatricula(String matricula) {
@@ -23,17 +18,3 @@ public class Taller {
 	}
 
 }
-=======
-/**
- * 
- */
-package Main;
-
-/**
- * @author Miguel A. Sastre
- *
- */
-public class Taller {
-
-}
->>>>>>> refs/heads/Miguel-Á.-Sastre
