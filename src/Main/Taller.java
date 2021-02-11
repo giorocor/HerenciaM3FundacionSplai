@@ -1,7 +1,7 @@
 package Main;
 
 /**
- * @author User
+ * @author Christian Rivas Pottier
  *
  */
 public class Taller {

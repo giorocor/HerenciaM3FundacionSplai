@@ -4,7 +4,7 @@
 package Models;
 
 /**
- * @author User
+ * @author Christian Rivas Pottier
  *
  */
 public abstract class Vehiculo {
