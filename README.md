@@ -6,10 +6,10 @@
 
 | Developer | Rama | Rol | Fecha Incorporación | Proyecto | Versión |
 | --- | :---:  | :---:  | :---:  | :---: | :---:  |
-| Miguel Á. Sastre | Master / Dev1 | Project Manager/Dev | 01/01/2021 |   |   |
-| Cristián Rivas | Dev 2 |  Developer| 01/01/2021 |   |   |
-| Albert Diaz | Dev 3 |  Developer| 01-01-2021 |   |   |
-| Giovanni Rodriguez | Dev 4 |  Developer| 01-01-2021 |   |   |
+| Miguel Á. Sastre | Master / Dev1 | Project Manager/Dev | 11/02/2021 |   |   |
+| Cristián Rivas | Dev 2 |  Developer| 11/02/2021 |   |   |
+| Albert Diaz | Dev 3 |  Developer| 11/02/2021 |   |   |
+| Giovanni Rodriguez | Dev 4 |  Developer| 11/02/2021 |   |   |
 
 #### 2. Description
 ```
