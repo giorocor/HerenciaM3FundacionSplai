@@ -9,9 +9,8 @@ package Models;
  */
 public class Rueda {
 	
-	protected String marcaDel;
+	protected String marca;
 	protected double diamDel;
-	protected String marcaTra;
 	protected double diamTra;
 	/**
 	 * @param marcaDel
@@ -19,17 +18,16 @@ public class Rueda {
 	 * @param marcaTra
 	 * @param diamTra
 	 */
-	public Rueda(String marcaDel, double diamDel, String marcaTra, double diamTra) {
-		this.marcaDel = marcaDel;
+	public Rueda(String marca, double diamDel, double diamTra) {
+		this.marca = marca;
 		this.diamDel = diamDel;
-		this.marcaTra = marcaTra;
 		this.diamTra = diamTra;
 	}
 	public String getMarcaDel() {
-		return marcaDel;
+		return marca;
 	}
-	public void setMarcaDel(String marcaDel) {
-		this.marcaDel = marcaDel;
+	public void setMarcaDel(String marca) {
+		this.marca = marca;
 	}
 	public double getDiamDel() {
 		return diamDel;
@@ -37,12 +35,7 @@ public class Rueda {
 	public void setDiamDel(double diamDel) {
 		this.diamDel = diamDel;
 	}
-	public String getMarcaTra() {
-		return marcaTra;
-	}
-	public void setMarcaTra(String marcaTra) {
-		this.marcaTra = marcaTra;
-	}
+	
 	public double getDiamTra() {
 		return diamTra;
 	}
