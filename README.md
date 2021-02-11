@@ -6,22 +6,17 @@
 
 | Developer | Rama | Rol | Fecha Incorporación | Proyecto | Versión |
 | --- | :---:  | :---:  | :---:  | :---: | :---:  |
-| Miguel Á. Sastre | Master / Dev1 | Project Manager/Dev | 11/02/2021 |   |   |
-| Cristián Rivas | Dev 2 |  Developer| 11/02/2021 |   |   |
-| Albert Diaz | Dev 3 |  Developer| 11/02/2021 |   |   |
-| Giovanni Rodriguez | Dev 4 |  Developer| 11/02/2021 |   |   |
+| Miguel Á. Sastre | Master / Miguel-Á.-Sastre | Project Manager/Dev | 11/02/2021 |   |   |
+| Cristián Rivas | crivas |  Developer| 11/02/2021 |   |   |
+| Albert Diaz | Smulli |  Developer| 11/02/2021 |   |   |
+| Giovanni Rodriguez | giorocor|  Developer| 11/02/2021 |   |   |
 
-#### 2. Description
+#### 2. Descripción
 ```
 Descripción simple y corta del contexto de tu proyecto.
 ```
 
-#### 3. Link a un demo con el proyecto desplegado: https://github.com/
-
-```
-* Nombre de la App: [GITTT] (https://github.com/)
-```
-#### 4. Lista con los pasos mínimos que se necesitan para clonar exitosamente el proyecto y echarlo a andar en local.
+#### 3. Lista con los pasos mínimos que se necesitan para clonar exitosamente el proyecto y echarlo a andar en local.
 
 ```
 
