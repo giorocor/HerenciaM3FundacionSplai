@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * 
  */
@@ -22,3 +23,17 @@ public class Taller {
 	}
 
 }
+=======
+/**
+ * 
+ */
+package Main;
+
+/**
+ * @author Miguel A. Sastre
+ *
+ */
+public class Taller {
+
+}
+>>>>>>> refs/heads/Miguel-Á.-Sastre
