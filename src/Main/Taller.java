@@ -1,5 +1,6 @@
 package Main;
 
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Random;
 
@@ -14,15 +15,35 @@ public class Taller {
 
 	
 	static void taller() {
-		Titular titular1 = null;
+		LinkedList<Vehiculo> listaVehiculos = new LinkedList<Vehiculo>();
+		LinkedList<Conductor> listaConductores = new LinkedList<Conductor>();
 		
-		System.out.println("Crear titular");
-		
-		titular1 = crearTitular();
-		
-		System.out.println("Crear Vehiculo");
-		
-		crearVehiculo(titular1.getLicencia());
+		boolean exit = false;
+		String [] opciones = {""};
+		int opcionElegida;
+ 		
+		/*
+		 * A. Opcion crear nuevo usuario.
+		 *  
+		 *  1. Crear Titular
+		 * 
+		 *  2. Crear vehiculo
+		 * 
+		 *  3. ¿Vas a ser conductor del vehiculo?
+		 * 	 A. Si. Nuevo conductor con datos del titular
+		 * 	 B. No. Crear nuevo conductor.
+		 * 
+		 * B. Opcion crear nuevo vehiculo.
+		 * 
+		 *  1. Crea vehiculo
+		 * 
+		 *  2. Crear Titular
+		 * 
+		 */
+		do {
+			opcionElegida = darOpciones(opciones,"Elige un vehiculo");	
+			
+		}while(!exit);
 	}
 	
 	
@@ -30,6 +51,25 @@ public class Taller {
 	/**
 	 * 
 	 */
+	
+	static Conductor crearConductor() {
+		String nombre, apellido, fechaNacimiento,licencia;
+		String [] listaLicencias = {"A","B","C","A+B","B+C","A+B+C"}; 
+		String [] opciones = {"Si","No"};
+		
+		nombre = solicitarDatosString("Nombre: ");
+		apellido = solicitarDatosString("Apellido: ");
+		fechaNacimiento = solicitarDatosString("Fecha de Nacimiento: ");
+		licencia = (String) menuDesplegable("Elige tipo de licencia: ", listaLicencias);
+		
+		return new Conductor(nombre,apellido,fechaNacimiento, new Licencia(new Random().nextInt(1000),
+				licencia,nombre + " " + apellido,fechaNacimiento ));
+	}
+	
+	/**
+	 * 
+	 */
+	
 	static Titular crearTitular() {
 		String nombre, apellido, fechaNacimiento,licencia;
 		boolean seguro, garaje;
@@ -58,18 +98,17 @@ public class Taller {
 		boolean exit = false;
 		String matricula,marca,color;
 		String marcaRueda [] = {"Michellin","Goodyear","Dunlop","Firestone","Bridgestone","Hankook","Kumho"};
-		String tipoVehiculo [] = {"coche","moto","camión"} ;
+		String tipoVehiculo [] = {"Moto", "Coche","Camión"};
 		String marcasCoches [] = {"BMW","Audi","Renault", "Dacia", "Mercedes", "Seat"};
 		String colores [] = {"Azul","Amarillo","Rojo","Blanco","Negro","Fucsia","Morado","Verde"};
+		
+		// Tipo de motos
 		String marcasMotos [] = {"BMW","Kawasaki","Harley-Davidson", "Ducati", "Suzuki", "Honda"};
+		
 		Vehiculo nuevoVehiculo = null;
 		Rueda ruedas = null;
-		
-		
-		
-		
-		opcionVehiculo = darOpciones(tipoVehiculo,"Elige un vehiculo");		
-		System.out.println(opcionVehiculo);
+
+		opcionVehiculo = darOpciones(tipoLicencia(licencia.getTipoLicencia()),"Elige un vehiculo");		
 		
 		do {
 			matricula = solicitarDatosString("Dime tu matricula");
@@ -110,9 +149,24 @@ public class Taller {
 		return nuevoVehiculo;
 	}
 	
+	
+	
 	/**
 	 * Métodos Auxiliares.
 	 */
+	
+	public static String [] tipoLicencia(String licencia) {
+		HashMap<String, String> lista = new HashMap<>() {{
+			put("A","Moto");
+			put("B","Moto:Coche");
+			put("C","Moto:Coche");
+			put("A+B","Moto:Coche");
+			put("B+C","Moto:Coche");
+			put("A+B+C","Moto:Coche");
+		}};
+		
+		return lista.get(licencia).split(":");
+	}
 	
 	public static boolean comprobarRueda(double diametro) {
 		return ((diametro >= 0.4) && (diametro <= 4)) ? true:false;
