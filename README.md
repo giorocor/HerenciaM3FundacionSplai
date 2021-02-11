@@ -6,9 +6,10 @@
 
 | Developer | Rama | Rol | Fecha Incorporación | Proyecto | Versión |
 | --- | :---:  | :---:  | :---:  | :---: | :---:  |
-| Jose Marín | Master / Dev1 | Project Manager | 01/01/2021 |   |   |
-| Edurne Camarena | Dev 2 | Backend Developer| 01/01/2021 |   |   |
-| Mayte Oses | Dev 3 | Frontend Developer| 01-01-2021 |   |   |
+| Miguel Á. Sastre | Master / Dev1 | Project Manager/Dev | 01/01/2021 |   |   |
+| Cristián Rivas | Dev 2 |  Developer| 01/01/2021 |   |   |
+| Albert Diaz | Dev 3 |  Developer| 01-01-2021 |   |   |
+| Giovanni Rodriguez | Dev 4 |  Developer| 01-01-2021 |   |   |
 
 #### 2. Description
 ```
