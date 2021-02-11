@@ -16,8 +16,4 @@
 Descripción simple y corta del contexto de tu proyecto.
 ```
 
-#### 3. Lista con los pasos mínimos que se necesitan para clonar exitosamente el proyecto y echarlo a andar en local.
-
-```
-
 
