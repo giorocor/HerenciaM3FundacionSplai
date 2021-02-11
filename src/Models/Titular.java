@@ -5,7 +5,7 @@ public class Titular extends Persona {
 	private boolean garaje;
 	
 	
-	public Titular(String nomnbre, String apellido, String fechaNacimiento, String licencia, boolean seguro,
+	public Titular(String nomnbre, String apellido, String fechaNacimiento, Licencia licencia, boolean seguro,
 			boolean garaje) {
 		super(nomnbre, apellido, fechaNacimiento, licencia);
 		this.seguro = seguro;
