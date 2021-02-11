@@ -1,6 +1,7 @@
 package Main;
 
 import java.util.LinkedList;
+import java.util.Random;
 
 import javax.swing.JOptionPane;
 
@@ -13,7 +14,15 @@ public class Taller {
 
 	
 	static void taller() {
+		Titular titular1 = null;
 		
+		System.out.println("Crear titular");
+		
+		titular1 = crearTitular();
+		
+		System.out.println("Crear Vehiculo");
+		
+		crearVehiculo(titular1.getLicencia());
 	}
 	
 	
@@ -22,7 +31,7 @@ public class Taller {
 	 * 
 	 */
 	static Titular crearTitular() {
-		String nombre, apellido, fechaNacimiento, licencia;
+		String nombre, apellido, fechaNacimiento,licencia;
 		boolean seguro, garaje;
 		String [] listaLicencias = {"A","B","C","A+B","B+C","A+B+C"}; 
 		String [] opciones = {"Si","No"};
@@ -35,14 +44,15 @@ public class Taller {
 		garaje = (darOpciones(opciones,"¿Tiene garaje?")) == 0 ? true:false;	
 		
 		
-		return new Titular(nombre,apellido,fechaNacimiento,licencia,seguro,garaje);
+		return new Titular(nombre,apellido,fechaNacimiento, new Licencia(new Random().nextInt(1000),
+				licencia,nombre + " " + apellido,fechaNacimiento ),seguro,garaje);
 	}
 	
 	/**
 	 * 
 	 */
 	
-	static Vehiculo crearVehiculo() {
+	static Vehiculo crearVehiculo(Licencia licencia) {
 		int opcionVehiculo;
 		double diamDel,diamTra;
 		boolean exit = false;
@@ -60,6 +70,7 @@ public class Taller {
 		
 		opcionVehiculo = darOpciones(tipoVehiculo,"Elige un vehiculo");		
 		System.out.println(opcionVehiculo);
+		
 		do {
 			matricula = solicitarDatosString("Dime tu matricula");
 			if(comprobarMatricula(matricula)) {
@@ -68,8 +79,8 @@ public class Taller {
 		}while(comprobarMatricula(matricula));
 		
 		
-		marca = (String) menuDesplegable("Elige una marca: ", marcasCoches);
-		color = (String) menuDesplegable("Elige un color", colores);
+		marca =  menuDesplegable("Elige una marca: ", marcasCoches);
+		color =  menuDesplegable("Elige un color", colores);
 		
 		
 		do {
@@ -98,6 +109,10 @@ public class Taller {
 		
 		return nuevoVehiculo;
 	}
+	
+	/**
+	 * Métodos Auxiliares.
+	 */
 	
 	public static boolean comprobarRueda(double diametro) {
 		return ((diametro >= 0.4) && (diametro <= 4)) ? true:false;
@@ -136,10 +151,10 @@ public class Taller {
 		JOptionPane.showMessageDialog(null, text);
 	}
 	
-	public static Object menuDesplegable(String texto, String [] opciones) {
+	public static String menuDesplegable(String texto, String [] opciones) {
 		Object opcion = JOptionPane.showInputDialog(null, texto, "Elegir",
 				JOptionPane.QUESTION_MESSAGE, null, opciones, opciones[0]);
-		return opcion;
+		return (String) opcion;
 	}
 	
 	public static boolean esNumero(String strNum) {

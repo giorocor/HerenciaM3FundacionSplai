@@ -5,10 +5,10 @@ public abstract class Persona {
 	protected String nomnbre;
 	protected String apellido;
 	protected String fechaNacimiento;
-	protected String licencia;
+	protected Licencia licencia;
 	
 	
-	public Persona(String nomnbre, String apellido, String fechaNacimiento, String licencia) {
+	public Persona(String nomnbre, String apellido, String fechaNacimiento, Licencia licencia) {
 		super();
 		this.nomnbre = nomnbre;
 		this.apellido = apellido;
@@ -29,7 +29,7 @@ public abstract class Persona {
 		return fechaNacimiento;
 	}
 
-	public String getLicencia() {
+	public Licencia getLicencia() {
 		return licencia;
 	}
 
