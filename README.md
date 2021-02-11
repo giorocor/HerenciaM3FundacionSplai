@@ -20,11 +20,4 @@ Descripción simple y corta del contexto de tu proyecto.
 
 ```
 
-#### 5. Screenshot imagen que indique cómo debe verse el proyecto.
-
-![image](https://user-images.githubusercontent.com/16636086/106936120-7aaf8300-671c-11eb-9ed2-79fe80608f50.png)
-
-
-
-
 
