@@ -2,23 +2,23 @@ package Models;
 
 public abstract class Persona {
 
-	protected String nomnbre;
+	protected String nombre;
 	protected String apellido;
 	protected String fechaNacimiento;
 	protected Licencia licencia;
 	
 	
-	public Persona(String nomnbre, String apellido, String fechaNacimiento, Licencia licencia) {
+	public Persona(String nombre, String apellido, String fechaNacimiento, Licencia licencia) {
 		super();
-		this.nomnbre = nomnbre;
+		this.nombre = nombre;
 		this.apellido = apellido;
 		this.fechaNacimiento = fechaNacimiento;
 		this.licencia = licencia;
 	}
 
 
-	public String getNomnbre() {
-		return nomnbre;
+	public String getNombre() {
+		return nombre;
 	}
 
 	public String getApellido() {
@@ -36,7 +36,7 @@ public abstract class Persona {
 
 	@Override
 	public String toString() {
-		return "Persona [nomnbre=" + nomnbre + ", apellido=" + apellido + ", fechaNacimiento=" + fechaNacimiento
+		return "Persona [nomnbre=" + nombre + ", apellido=" + apellido + ", fechaNacimiento=" + fechaNacimiento
 				+ ", licencia=" + licencia + "]";
 	}
 	
