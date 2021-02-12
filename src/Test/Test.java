@@ -9,10 +9,7 @@ import javax.swing.JOptionPane;
 
 import Models.*;
 
-/**
- * @author Miguel A. Sastre
- *
- */
+
 public class Test {
 	
 	public static int darOpciones(String[] opciones, String textoOpciones) {

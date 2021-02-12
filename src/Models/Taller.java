@@ -5,10 +5,6 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import javax.swing.JOptionPane;
 
-/**
- * @author Miguel Á. Sastre
- * @author Christian Rivas Pottier
- */
 
 public class Taller {
 

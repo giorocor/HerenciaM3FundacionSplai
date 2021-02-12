@@ -5,11 +5,6 @@ package Models;
 
 import java.util.LinkedList;
 
-/**
- * @author Christian Rivas Pottier
- *
- */
-
 public class Coche extends Vehiculo {
 
 	

@@ -4,10 +4,6 @@ import Models.*;
 import Test.Test;
 
 
-/**
- * @author Miguel A. Sastre
- *
- */
 public class MainApp {
 	
 	
