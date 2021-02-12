@@ -1,7 +1,7 @@
 /**
  * 
  */
-package Main;
+package Test;
 
 import java.util.LinkedList;
 
