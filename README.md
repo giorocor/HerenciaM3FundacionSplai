@@ -1,4 +1,4 @@
-![banerGit](https://user-images.githubusercontent.com/16636086/106938115-ded34680-671e-11eb-8de4-35fd6d00868a.png)
+![banerGit](https://user-images.githubusercontent.com/22893383/107159880-121e0b80-6993-11eb-92e3-1efd1d8f4dba.PNG)
 
 # Proyecto Grupal: Taller de Vehículos 
 
