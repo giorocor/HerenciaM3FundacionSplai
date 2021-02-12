@@ -31,8 +31,8 @@ public abstract class Vehiculo {
 		this.color = color;
 		this.marca = marca;
 		this.ruedas = ruedas;
-		this.titular = null;
-		this.conductores = null;
+		this.titular = new Titular(marca, marca, marca, null, false, false);
+		this.conductores = new LinkedList<Conductor>();
 	}
 	
 	

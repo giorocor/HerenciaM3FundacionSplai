@@ -1,13 +1,36 @@
 package Main;
 
+import java.util.LinkedList;
+
+import javax.swing.JOptionPane;
+
+import Models.*;
+
 
 /**
  * @author Miguel A. Sastre
  *
  */
 public class MainApp {
+	
+	
 	public static void main(String [] args) {
-		Taller.taller();
+		Taller tallerSinDatos = new Taller(null,null,null);
+		Taller tallerConDatos = new Taller(Test.cargarVehiculos(),Test.cargarTitular(),Test.cargarConductor());
+		int opcion = Test.darOpciones(new String[] {"Test vacio","Test con datos"},"Elige una opción");
+		
+		switch(opcion) {
+		case 0:
+			tallerSinDatos.taller();
+			break;
+		case 1:
+			tallerConDatos.taller();
+			break;
+		}
+		
+		
 	}
+	
+	
 }
  
