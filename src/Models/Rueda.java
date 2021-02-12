@@ -3,10 +3,7 @@
  */
 package Models;
 
-/**
- * @author User
- *
- */
+
 public class Rueda {
 	
 	protected String marca;
