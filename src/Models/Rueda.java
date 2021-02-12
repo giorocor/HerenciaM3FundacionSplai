@@ -12,6 +12,7 @@ public class Rueda {
 	protected String marca;
 	protected double diamDel;
 	protected double diamTra;
+	
 	/**
 	 * @param marcaDel
 	 * @param diamDel

@@ -3,6 +3,8 @@
  */
 package Models;
 
+import java.util.LinkedList;
+
 /**
  * @author Christian Rivas Pottier
  *
@@ -12,22 +14,48 @@ public abstract class Vehiculo {
 	protected String color;
 	protected String marca;
 	protected Rueda ruedas;
+	protected Titular titular;
+	protected LinkedList<Conductor> conductores;
 	
 //CONSTRUCTOR-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	
+	/**
+	 * @param matricula
+	 * @param color
+	 * @param marca
+	 * @param ruedas
+	 */
 	public Vehiculo(String matricula, String color, String marca, Rueda ruedas) {
 		super();
 		this.matricula = matricula;
 		this.color = color;
 		this.marca = marca;
 		this.ruedas = ruedas;
+		this.titular = null;
+		this.conductores = null;
 	}
 	
 	
-//METODOS-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	
-
-		
+	/**
+	 * @param matricula
+	 * @param color
+	 * @param marca
+	 * @param ruedas
+	 * @param titular
+	 * @param conductores
+	 */
+	public Vehiculo(String matricula, String color, String marca, Rueda ruedas, Titular titular,
+			LinkedList<Conductor> conductores) {
+		super();
+		this.matricula = matricula;
+		this.color = color;
+		this.marca = marca;
+		this.ruedas = ruedas;
+		this.titular = titular;
+		this.conductores = conductores;
+	}
+	
 	
 //GETTERS SETTERS----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -37,6 +65,15 @@ public abstract class Vehiculo {
 	public String getMatricula() {
 		return matricula;
 	}
+	/**
+	 * @param matricula
+	 * @param color
+	 * @param marca
+	 * @param ruedas
+	 * @param titular
+	 * @param conductores
+	 */
+	
 	/**
 	 * @param matricula the matricula to set
 	 */
@@ -78,6 +115,47 @@ public abstract class Vehiculo {
 	 */
 	public void setRuedas(Rueda ruedas) {
 		this.ruedas = ruedas;
+	}
+
+
+	/**
+	 * @return the titular
+	 */
+	public Titular getTitular() {
+		return titular;
+	}
+
+
+	/**
+	 * @param titular the titular to set
+	 */
+	public void setTitular(Titular titular) {
+		this.titular = titular;
+	}
+
+
+	/**
+	 * @return the conductores
+	 */
+	public LinkedList<Conductor> getConductores() {
+		return conductores;
+	}
+
+
+	/**
+	 * @param conductores the conductores to set
+	 */
+	public void setConductores(LinkedList<Conductor> conductores) {
+		this.conductores = conductores;
 	}	
+	
+	
+	/**
+	 * @param conductor
+	 */
+	public void addConductor(Conductor conductor) {
+		this.conductores.add(conductor);
+	}
+	
 	
 }
