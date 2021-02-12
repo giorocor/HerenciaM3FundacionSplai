@@ -9,7 +9,6 @@ public abstract class Persona {
 	
 	
 	public Persona(String nombre, String apellido, String fechaNacimiento, Licencia licencia) {
-		super();
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.fechaNacimiento = fechaNacimiento;
