@@ -1,6 +1,7 @@
 package Models;
 
 
+
 public class Licencia {
 	private int id;
 	private String tipoLicencia;
@@ -8,6 +9,7 @@ public class Licencia {
 	private String fechaCaducidad;
 	
 	public Licencia(int id, String tipoLicencia, String nombre, String fechaCaducidad) {
+		super();
 		this.id = id;
 		this.tipoLicencia = tipoLicencia;
 		this.nombre = nombre;
@@ -46,7 +48,6 @@ public class Licencia {
 		this.fechaCaducidad = fechaCaducidad;
 	}
 	
-	
-	
-	
+
 }
+

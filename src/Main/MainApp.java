@@ -19,7 +19,7 @@ public class MainApp {
 		case 1:
 			tallerConDatos.taller();
 			break;
-		}
+		} 
 		
 		
 	}
